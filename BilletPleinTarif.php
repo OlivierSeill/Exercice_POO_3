@@ -42,7 +42,7 @@ class BilletPleinTarif{
     }
     
     public function imprimerDetails():void{
-        $details="Séance numéro du".$this->getSeance()->getDate()." à ".$this->getSeance()->getHeure()." pour le film : ".$this->getSeance()->getFilm().". Numéro de billet :".$this->getNumero();
+        $details="Séance du ".$this->getSeance()->getDate()." à ".$this->getSeance()->getHeure()." pour le film : ".$this->getSeance()->getFilm().". Numéro de billet :".$this->getNumero();
         
         echo($details);
     }
